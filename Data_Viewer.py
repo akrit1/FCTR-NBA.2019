@@ -1,6 +1,6 @@
 """
-Module: Feature_Selector.py
-Use: Determines which features are best for use when creating MLP
+Module: Data_Viewer
+Use: View a 2D line graph comparing one feature to the label
 Last Edited: Akrit Sinha, 06-28-2019
 """
 # Packages
@@ -8,7 +8,7 @@ import pandas
 from datetime import datetime
 from textblob import TextBlob
 from sklearn import preprocessing
-from sklearn.ensemble import ExtraTreesClassifier
+import matplotlib.pyplot as plt
 
 # Import data to pandas data frame
 pandas.set_option('display.max_columns', None)
@@ -52,14 +52,7 @@ X['Sentiment'] = X['Description'].map(getsent)
 X['Punctuation'] = X['Description'].str.count('!!!|ebron|rving|urry|iannis|arden|Why') \
                    + 2*X['Description'].str.count('@|#|ames')
 X['Description'] = X['Description'].str.len()
-X['dTime'] = X['Created'].diff(periods=-3)
-X = X * 5
+X['dTime'] = X['Created'].diff(periods=-1)
 
-X = X.fillna(X.mean())
-y = y.fillna(y.mean())
-
-# Extracts features and determines the most useful ones using an ETC
-model = ExtraTreesClassifier()
-model.fit(X, y.values.ravel())
-print(X.head(0))
-print(model.feature_importances_)
+plt.plot(X['dTime'], y.values.ravel())
+plt.show()
