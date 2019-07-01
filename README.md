@@ -1,5 +1,5 @@
-# nbabox_neuralnet
-## NBA Box Neural Net Stuff
+# Multi-Layer Perceptron Generation from NBA Box 2019 Data
+## Application of First-Classification-Then-Regression and Repeated-Regression Analysis
 ### Steps to success:
 - Create an estimate MLP classifier using MLP_E-Classifier.py
 - Create a rank MLP classifier using MLP_R-Classifier.py
