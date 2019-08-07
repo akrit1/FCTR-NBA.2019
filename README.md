@@ -1,5 +1,5 @@
 # Multi-Layer Perceptron Generation from NBA Box 2019 Data
-## Application of First-Classification-Then-Regression and Repeated-Regression Analysis
+## Application of First-Classification-Then-Regression Analysis Coupled with Stochastic Gradient Boosting
 ### Steps to success:
 - Create an estimate MLP classifier using MLP_E-Classifier.py
 - Create a rank MLP classifier using MLP_R-Classifier.py
