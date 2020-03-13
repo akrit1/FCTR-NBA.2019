@@ -1,4 +1,4 @@
-# NBA Hackathon 2019 Code - Akrit Sinha, Anoop Panyam
+# NBA Hackathon 2019 Code - August 2019
 ## Ensembled supervised learning with MLPs coupled with Stochastic Gradient Boosting for NBA Box 2019 Data
 ### To use:
 - Create an estimate MLP classifier using MLP_E-Classifier.py
