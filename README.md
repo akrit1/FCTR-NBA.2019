@@ -1,5 +1,6 @@
 # NBA Hackathon 2019 Code - August 2019
-## Ensembled supervised learning with MLPs coupled with Stochastic Gradient Boosting for NBA Box 2019 Data
+## Applied ensembled supervised learning with MLPs coupled with Stochastic Gradient Boosting on NBA Box 2019 Data
+## Final MAE > 0.98
 ### To use:
 - Create an estimate MLP classifier using MLP_E-Classifier.py
 - Create a rank MLP classifier using MLP_R-Classifier.py
